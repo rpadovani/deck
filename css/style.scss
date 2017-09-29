@@ -428,9 +428,13 @@ input.input-inline {
 		text-align: center;
 		padding: 10px;
 		margin: 10px;
-		border: none;
+		border: 1px solid;
+		border-radius: 3px;
+		background-color: transparent;
 		overflow: hidden;
 		-webkit-box-shadow: none;
+		cursor: pointer;
+
 
 		&:hover {
 			text-align: center;
@@ -451,7 +455,7 @@ input.input-inline {
 				padding: 0;
 				border-bottom: 1px solid $color-primary-text;
 				border-radius: 0;
-				color: $color-primary-text;
+				color: #000;
 				background-color: transparent !important;
 				min-height: initial;
 			}

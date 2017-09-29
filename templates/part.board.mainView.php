@@ -103,7 +103,7 @@
 
 			<!-- CREATE CARD //-->
 			<div class="card create"
-				 ng-style="{'background-color':'#{{ boardservice.getCurrent().color }}'}" ng-if="boardservice.canEdit() && checkCanEdit() && filter!=='archive'">
+				 ng-style="{'border-color':'#{{ boardservice.getCurrent().color }}'}" ng-if="boardservice.canEdit() && checkCanEdit() && filter!=='archive'">
 				<form ng-submit="createCard(s.id, newCard.title)">
 					<h3 ng-if="status.addCard[s.id]">
 						<input type="text" autofocus-on-insert
@@ -115,7 +115,7 @@
 					</h3>
 				</form>
 				<div ng-if="!status.addCard[s.id]" ng-click="status.addCard[s.id]=true">
-					<i class="icon icon-add{{ boardservice.getCurrent().color | iconWhiteFilter }}"></i>
+					<i class="icon icon-add"></i>
 				</div>
 			</div>
 		</div>
